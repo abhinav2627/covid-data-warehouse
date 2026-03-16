@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: COVID_DW
+    schema: RAW
+    tables:
+      - name: RAW_COVID_DATA
+        description: Raw COVID-19 data loaded from Our World in Data

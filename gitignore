@@ -1,0 +1,21 @@
+# dbt
+target/
+dbt_packages/
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+env/
+
+# Credentials — NEVER commit these
+profiles.yml
+.dbt/
+
+# OS
+.DS_Store
+Thumbs.db

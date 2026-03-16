@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: mart_country_kpis
+    description: Latest COVID KPIs per country with global rankings
+    columns:
+      - name: country
+        tests:
+          - not_null
+          - unique
+      - name: rank_by_cases
+        tests:
+          - not_null
+
+  - name: mart_monthly_trends
+    description: Monthly COVID trends aggregated by continent
+    columns:
+      - name: month
+        tests:
+          - not_null
+
+  - name: mart_vaccination_leaders
+    description: Top 50 countries by vaccination rate
+    columns:
+      - name: vaccination_rank
+        tests:
+          - not_null

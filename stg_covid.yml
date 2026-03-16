@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_covid
+    description: Cleaned and typed COVID data from Our World in Data
+    columns:
+      - name: iso_code
+        description: Country ISO code
+        tests:
+          - not_null
+      - name: country
+        description: Country name
+        tests:
+          - not_null
+      - name: report_date
+        description: Date of report
+        tests:
+          - not_null
+      - name: case_fatality_rate
+        description: Deaths divided by total cases as percentage
